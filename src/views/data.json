@@ -1,0 +1,51 @@
+{
+  "site": {
+    "title": "Monk Static Boilerplate",
+    "description": "Site tagline here"
+  },
+  "pages": {
+    "index": {
+      "title": "",
+      "description": "",
+      "stylesheets": ["main"],
+      "scripts": ["main"]
+    },
+    "admin": {
+      "title": "Admin",
+      "description": ""
+    }
+  },
+  "menus": {
+    "primary": [
+      {
+        "id": "about",
+        "path": "/#about",
+        "children": "About"
+      },
+      {
+        "id": "mail-us",
+        "path": "mailto:info@runamukciderco.com.au",
+        "children": "Contact"
+      }
+    ],
+    "secondary": [
+      {
+        "id": "facebook",
+        "path": "https://www.facebook.com/RunamukCiderCo/",
+        "children": "Facebook",
+        "external": true
+      },
+      {
+        "id": "instagram",
+        "path": "https://www.instagram.com/runamukciderco/",
+        "children": "Instagram",
+        "external": true
+      },
+      {
+        "id": "contact",
+        "path": "mailto:info@runamukciderco.com.au",
+        "children": "Contact"
+      }
+    ]
+  }
+}

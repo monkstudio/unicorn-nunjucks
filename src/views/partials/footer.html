@@ -1,0 +1,19 @@
+{%- block footer -%}
+
+  <footer class="site-footer" role="contentinfo">
+
+    <nav class="nav" role="navigation">
+      <ul class="menu secondary-menu">
+        {% for item in menus.secondary %}
+          <li class="menu-item  menu-item-{{ item.id }}">
+            <a class="menu-link  {%if page.id == item.id %}is-active{% endif %}" href="{{ paths.root + item.path }}" {%if item.external === true %}target="_blank" rel="noopener noreferrer"{% endif %}>
+              {{ item.children | safe }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav><!-- /nav -->
+    <div class="meta">RUNAMUK CIDER CO. Producers LIQUOR licENSE NO. 618210395517</div>
+  </footer><!-- /footer -->
+
+{%- endblock -%}
